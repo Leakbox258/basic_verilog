@@ -34,7 +34,7 @@ round_robin_performance_enc #(
 
 module round_robin_performance_enc #( parameter
   WIDTH = 32,
-  WIDTH_W = $clogb2(WIDTH)
+  WIDTH_W = clogb2(WIDTH)
 )(
   input clk,                        // clock
   input nrst,                       // inversed reset, synchronous

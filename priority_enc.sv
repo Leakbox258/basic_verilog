@@ -26,7 +26,7 @@ priority_enc #(
 
 module priority_enc #( parameter
   WIDTH = 32,
-  WIDTH_W = $clogb2(WIDTH)
+  WIDTH_W = clogb2(WIDTH)
 )(
   input  [WIDTH-1:0] id,      // input data bus
 
